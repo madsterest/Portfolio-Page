@@ -1,49 +1,61 @@
+:root {
+  --orange: orangered;
+  --pink: salmon;
+}
 header {
   height: 100px;
-  background-color: orangered;
+  background-color: var(--orange);
   display: flex;
   justify-content: space-between;
-  border-bottom: 20px solid salmon;
+  border-bottom: 20px solid var(--pink);
 }
 .logo {
   font-size: 150%;
   font-family: Georgia, "Times New Roman", Times, serif;
-  border-right: 20px solid salmon;
+  border-right: 20px solid var(--pink);
   height: 100px;
   width: 250px;
   padding-top: 10%;
   padding-left: 2%;
 }
+a:link {
+  color: white;
+}
+a:visited {
+  color: var(--pink);
+}
 
 nav {
-  padding-top: 35%;
+  padding-top: 25%;
 }
 header ul li {
   display: inline;
   margin-right: 20px;
+  border-right: 10px solid var(--pink);
+  padding-right: 10px;
 }
 
 main {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 aside {
   min-width: 250px;
-  background-color: orangered;
-  min-height: 1500px;
-  border-right: 20px solid salmon;
+  background-color: var(--orange);
+  border-right: 20px solid var(--pink);
+  height: 1400px;
   float: left;
 }
 .this-page {
   margin-left: 30px;
   margin-top: 40px;
 }
-aside h2 {
+.nav {
   padding: 1%;
   font-size: 100%;
   width: 130px;
-  border-right: 10px solid salmon;
-  border-bottom: 10px solid salmon;
+  border-right: 10px solid var(--pink);
 }
 .this-page li {
   margin-top: 15px;
@@ -57,8 +69,7 @@ aside h2 {
   font-size: 125%;
   margin-left: 45%;
   width: 130px;
-  border-right: 10px solid salmon;
-  border-bottom: 10px solid salmon;
+  border-right: 10px solid var(--pink);
 }
 .about p {
   height: 300px;
@@ -69,16 +80,32 @@ aside h2 {
   height: 300px;
   float: left;
 }
-
-footer {
-  background-color: orangered;
+.projects {
+  height: 100px;
 }
-footer h3 {
-  padding: 1%;
-  font-size: 100%;
-  margin-left: 30px;
-  margin-top: 2%;
-  width: 130px;
-  border-right: 10px solid salmon;
-  border-bottom: 10px solid salmon;
+.contact-info {
+  margin: 5%;
+}
+.contact-info li {
+  display: inline;
+  margin-right: 20%;
+}
+
+.about:hover .heading-about {
+  border-bottom: 10px solid var(--pink);
+}
+.this-page:hover .heading-nav {
+  border-bottom: 10px solid var(--pink);
+}
+.projects:hover .heading-projects {
+  border-bottom: 10px solid var(--pink);
+}
+.contact:hover .heading-contact {
+  border-bottom: 10px solid var(--pink);
+}
+.git-link:hover {
+  border-bottom: 10px solid var(--pink);
+}
+.contact-link:hover {
+  border-bottom: 10px solid var(--pink);
 }
