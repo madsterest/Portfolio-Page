@@ -2,6 +2,9 @@
   --orange: orangered;
   --pink: salmon;
 }
+body{
+  font-family: 'Quicksand', sans-serif;
+}
 header {
   height: 150px;
   background-color: var(--orange);
@@ -10,23 +13,31 @@ header {
   border-bottom: 20px solid var(--pink);
 }
 .logo {
-  font-size: 150%;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 250%;
+  font-family: 'Caveat', cursive;
   border-right: 20px solid var(--pink);
-  height: 150px;
-  width: 250px;
-  padding-top: 20%;
-  padding-left: 2%;
+  width: 20%;
+  padding-top: 2%;
+  padding-left: 2%
+  position: relative;
+  
+}
+
+.logo span{
+  display: block;
+  position: absolute;
+  left: 8%;
+
 }
 a:link {
   color: white;
 }
 a:visited {
-  color: var(--pink);
+  color: white;
 }
 
 nav {
-  padding-top: 50%;
+  padding-top: 30%;
 }
 header ul li {
   display: inline;
@@ -36,16 +47,22 @@ header ul li {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  height: 1500px;
 }
+
 aside {
-  min-width: 250px;
+  width: 20%;
   background-color: var(--orange);
   border-right: 20px solid var(--pink);
-  height: 1400px;
+  height: 100%;
   float: left;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+
 }
 .this-page {
   margin-left: 30px;
@@ -61,8 +78,8 @@ aside {
   margin-top: 15px;
 }
 .graphic {
-  width: 900px;
-  margin-left: 15%;
+  width: 95%;
+  margin-left: 5%;
 }
 .heading {
   padding: 1%;
@@ -83,6 +100,16 @@ aside {
 .projects {
   height: 100px;
 }
+
+#contact{
+  background-color: var(--orange);
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  padding-bottom: 3%;
+
+}
+}
 .contact-info {
   margin: 5%;
 }
@@ -91,9 +118,17 @@ aside {
   margin-right: 20%;
 }
 
-.about:hover .heading-about {
-  border-bottom: 10px solid var(--pink);
+.about:hover .heading-about,
+.this-page:hover .heading-nav,
+.projects:hover .heading-projects,
+.contact:hover .heading-contact,
+.git-link:hover,
+.contact-link:hover,
+.linked-link:hover {
+  border-bottom: 5px solid var(--pink);
+  padding-bottom: 2%;
 }
+/*
 .this-page:hover .heading-nav {
   border-bottom: 10px solid var(--pink);
 }
@@ -109,3 +144,4 @@ aside {
 .contact-link:hover {
   border-bottom: 10px solid var(--pink);
 }
+*/
