@@ -47,7 +47,7 @@ header ul li {
 }
 
 main {
-  height: 1500px;
+  height: 1700px;
 }
 
 aside {
@@ -66,7 +66,7 @@ article {
   height: 100%;
 }
 
-.nav {
+.heading-nav {
   padding: 1%;
   font-size: 100%;
   width: 130px;
@@ -101,8 +101,24 @@ article {
 }
 .projects {
   height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-
+.heading-projects {
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+.project-1 img {
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+.project-1 h4 {
+  text-align: center;
+  padding-bottom: 1%;
+}
 #contact {
   background-color: var(--orange);
   position: absolute;
