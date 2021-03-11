@@ -110,15 +110,29 @@ article {
   margin-bottom: 5%;
   margin-left: 5%;
 }
+.project-1 {
+  transition: all 0.5s ease-in-out;
+}
 .project-1 img {
   object-fit: contain;
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
 .project-1 h4 {
   text-align: center;
   padding-bottom: 1%;
 }
+.project-alt {
+  padding: 1%;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+.project-alt img {
+  object-fit: contain;
+  width: 100%;
+  height: 225px;
+}
+
 #contact {
   background-color: var(--orange);
   position: absolute;
@@ -132,7 +146,7 @@ article {
 }
 .contact-info li {
   display: inline;
-  margin: 4% 12%;
+  margin: 4% 10%;
 }
 
 .about:hover .heading-about,
@@ -148,4 +162,64 @@ article {
 .linked-link:hover {
   border-bottom: 5px solid var(--pink);
   padding-bottom: 2%;
+}
+.project-alt:hover,
+.project-1:hover {
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 992px) {
+  .contact-info li {
+    margin: 4% 5%;
+  }
+  main {
+    height: 1900px;
+  }
+  .project-alt {
+    width: 45%;
+  }
+  .logo {
+    padding-left: 0;
+    font-size: 225%;
+  }
+  .logo span {
+    left: 7%;
+  }
+  .heading-nav {
+    width: 110px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    border-right: none;
+    font-size: 255%;
+  }
+  .logo span {
+    left: 18%;
+  }
+  .project-alt {
+    width: 90%;
+  }
+  main {
+    height: 2600px;
+  }
+  .about {
+    height: 800px;
+  }
+  .headshot {
+    width: 350px;
+    height: 500px;
+    float: none;
+    align-items: center;
+    margin-left: 20%;
+  }
+  .heading-about {
+    margin-bottom: 5%;
+  }
+  .contact-info li {
+    display: block;
+  }
+  aside {
+    display: none;
+  }
 }
